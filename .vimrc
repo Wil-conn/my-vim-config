@@ -133,7 +133,7 @@ set foldcolumn=1
 
 " Enable syntax highlighting
  syntax enable
- "colorscheme afterglow
+ colorscheme afterglow
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
