@@ -133,7 +133,9 @@ set foldcolumn=1
 
 " Enable syntax highlighting
  syntax enable
- colorscheme tokyo-metro
+ ""colorscheme wal
+
+colorscheme spacegray 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -367,7 +369,11 @@ func! WordProcessorMode()
 endfu 
 com! WP call WordProcessorMode()
 set number
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 set relativenumber
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 :inoremap ( ()<Esc>i
 :inoremap " ""<Esc>i
 :inoremap [ []<Esc>i
